@@ -8,6 +8,7 @@
     "commit": "npm run prepublish && npm test && git-cz",
     "prepublish": "ngc && npm run build",
     "build": "webpack",
+    "build-ng": "ng-packagr -p ng-package.json",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
@@ -62,6 +63,7 @@
     "karma-sourcemap-loader": "0.3.7",
     "karma-webpack": "2.0.3",
     "loader-utils": "1.1.0",
+    "ng-packagr": "^1.0.0-pre.7",
     "reflect-metadata": "0.1.10",
     "rimraf": "2.6.1",
     "rxjs": "5.4.0",
